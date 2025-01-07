@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "playfair",sans-serif;
+}
+body {
+    font-size: 15pt;
+    background: #A1BA9C;
+}
+.popup{
+  width: 399px;
+  background: #F3F3F3;
+  position: absolute;
+  border-radius: 6px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 20px 15px;
+  color: #333;
+  visibility: hidden;
+  box-shadow: 2px 3px 6px #000000;
+  transition: transform 4s, top 2s;
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+}
+.img{
+  text-align: center;
+  font-size: 90px;
+  margin-top: -70px;
+  border-radius: 20px;
+}
+.h1{
+  font-size: 4.5rem;
+  margin-top: 0;
+}
+p{
+  line-height: 1.7;
+}
+.ok{
+  padding: 20px 60px;
+  margin-top: 20px;
+  background: #32AA07;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+  width: 299px;
+  outline: none;
+  border-radius: 10px;
+}
+.popupspan{
+  text-decoration: underline;
+  color: #0A4BFFD6;
+}
+
+
+.quote-box{
+  width: 700px;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  background: #fff;
+  transform: translate(-50%,-50%);
+  padding: 40px;
+  text-align: center; 
+  border-radius: 10px;
+  box-shadow: 0 5px 12px #333;
+}
+.quote-box h2{
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.quote-box h2::after{
+  content: "";
+  width: 75px;
+  height: 3px;
+  background: #1B8407;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.quote-box blockquote{
+  min-height: 110px;
+  font-size: 26px;
+}
+.quote-box blockquote::before,.quote-box blockquote::after{
+  content: '"';
+}
+.quote-box span{
+  display: block;
+  float: right;
+  margin-left: 10px;
+  position: relative;
+}
+.quote-box span::before{
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #1B8407;
+  left: -35px;
+  top: 50%;
+  position: absolute;
+}
+.quote-box .btn{
+  width: 100%; 
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.quote-box button{
+  color: #fff;
+  background: #32AA07;
+  border: 1px solid #1B8407;
+  display: flex;
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.quote-box button img{
+  width: 20px;
+  margin-right: 10px;
+}
+.quote-box button:nth-child(2){
+  background: transparent;
+  color: #1B8407;
+}

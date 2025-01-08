@@ -34,9 +34,12 @@ body {
   margin-top: -70px;
   border-radius: 20px;
 }
-.h1{
+h1{
   font-size: 4.5rem;
-  margin-top: 0;
+  margin-top: 30px;
+}
+h1::before,h1::after{
+  content: '"';
 }
 p{
   line-height: 1.7;
@@ -154,10 +157,15 @@ p{
     width: 200px;
   }
   .quote-box{
-    width: 310px;
+    min-width: 310px;
+    max-width: 320px;
     padding: 50px 20px;
   }
   .quote-box h{
     font-size: 25px;
+  }
+  .quote-box span{
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
 }

@@ -6,7 +6,7 @@
 }
 body {
     font-size: 15pt;
-    background: #A1BA9C;
+    background: #A4ACFF;
 }
 .popup{
   width: 399px;
@@ -44,7 +44,7 @@ p{
 .ok{
   padding: 20px 60px;
   margin-top: 20px;
-  background: #32AA07;
+  background: #3C4BF5;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -82,7 +82,7 @@ p{
   content: "";
   width: 75px;
   height: 3px;
-  background: #1B8407;
+  background: #3C4BF5;
   border-radius: 10px;
   position: absolute;
   left: 50%;
@@ -106,7 +106,7 @@ p{
   content: "";
   width: 25px;
   height: 2px;
-  background: #1B8407;
+  background: #3C4BF5;
   left: -35px;
   top: 50%;
   position: absolute;
@@ -119,8 +119,8 @@ p{
 }
 .quote-box button{
   color: #fff;
-  background: #32AA07;
-  border: 1px solid #1B8407;
+  background: #3C4BF5;
+  border: 1px solid #3C4BF5;
   display: flex;
   border-radius: 25px;
   width: 150px;
@@ -129,6 +129,11 @@ p{
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.4s;
+}
+.quote-box button:hover{
+  background: transparent;
+  color: #3C4BF5;
 }
 .quote-box button img{
   width: 20px;
@@ -136,5 +141,5 @@ p{
 }
 .quote-box button:nth-child(2){
   background: transparent;
-  color: #1B8407;
+  color: #3C4BF5;
 }

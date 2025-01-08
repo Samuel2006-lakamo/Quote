@@ -24,7 +24,8 @@ const apiKey = 'bNmHgMa2bna5kRi2//DGGA==FPPiYVjzCXBQAq8y'
 
 async function getQuote() {
   const apiurl = `c`;
-
+quote.textContent = 'loading...'
+author.textContent = 'loading...'
   try {
         const response = await fetch('https://api.api-ninjas.com/v1/quotes', {
       method: 'GET',
@@ -57,3 +58,7 @@ async function getQuote() {
 
 
 getQuote();
+
+function tweet() {
+  window.open('https://twitter.com/intent/tweet?text=' + quote.innerText + '---- by' + author.innerText, 'windon Tweet', 'width=600, height=300')
+}
